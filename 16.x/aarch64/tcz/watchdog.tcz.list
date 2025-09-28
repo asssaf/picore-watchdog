@@ -1,0 +1,3 @@
+usr/local/sbin/wd_identify
+usr/local/sbin/wd_keepalive
+usr/local/sbin/wd_watchdog
