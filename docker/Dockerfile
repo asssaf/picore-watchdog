@@ -19,7 +19,7 @@ RUN curl -sLo - "https://sourceforge.net/projects/watchdog/files/watchdog/${WATC
 WORKDIR watchdog-${WATCHDOG_VERSION}
 
 ENV CC="${CC}gcc"
-RUN ./configure --prefix=/usr/local
+RUN ./configure --host=$CC --prefix=/usr/local
 RUN make
 
 RUN make DESTDIR=extension -C src install
